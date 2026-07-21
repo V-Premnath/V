@@ -1,6 +1,9 @@
 {
   "name": "Node.js & n8n",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "features": {
+    "ghcr.io/devcontainers/features/git-lfs:1": {}
+  },
   "postCreateCommand": "npm install -g n8n && mkdir -p ~/.n8n && chmod 700 ~/.n8n",
   "containerEnv": {
     "N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS": "true"
